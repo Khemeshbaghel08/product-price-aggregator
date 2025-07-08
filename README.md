@@ -9,41 +9,33 @@ This Aggregator tool compares prices for products across different websites usin
   **Request Body**
     *JSON* :
     
-
  {
   "country": "string",
   "query": "string"
 }
 
 
-
-##  Run Instructions
+###  Run Instructions
 
 ###  Docker
-
 
 docker build -t price-aggregator .
 docker run -p 8000:8000 --env-file .env price-aggregator
 
 
 ###  Test using curl
-## Example:
+### Example:
 
-
-curl -X POST https://product-price-aggregator.onrender.com/docs \
-  -H "Content-Type: application/json" \
-  -d '{"country": "US", "query": "iPhone 16 Pro, 128GB"}'
+curl -X POST https://product-price-aggregator.onrender.com/compare-prices -H "Content-Type: application/json" -d "{\"country\": \"US\", \"query\": \"iPhone 16 Pro, 128GB\"}"
 
 
 
-
-
-##  .env Example
+###  .env key
 
 
 SERPAPI_KEY="key string"
 
-## Deploy
+### Deploy
 *https://product-price-aggregator.onrender.com*
 
 
