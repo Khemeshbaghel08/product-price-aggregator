@@ -42,3 +42,8 @@ curl -X POST https://price-compare-api.onrender.com/compare-prices \
 
 SERPAPI_KEY="key string"
 
+
+# video demo
+
+*https://drive.google.com/file/d/12OgFZBWilQ9zLMzpM6D3pIVwSU_gDDIW/view?usp=sharing*
+
