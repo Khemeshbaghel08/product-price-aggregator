@@ -30,9 +30,10 @@ docker run -p 8000:8000 --env-file .env price-aggregator
 ## Example:
 
 
-curl -X POST https://price-compare-api.onrender.com/compare-prices \
+curl -X POST https://product-price-aggregator.onrender.com/compare-prices \
   -H "Content-Type: application/json" \
   -d '{"country": "US", "query": "iPhone 16 Pro, 128GB"}'
+
 
 
 
@@ -41,6 +42,9 @@ curl -X POST https://price-compare-api.onrender.com/compare-prices \
 
 
 SERPAPI_KEY="key string"
+
+## Deploy
+*https://product-price-aggregator.onrender.com*
 
 
 # video demo
