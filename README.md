@@ -9,7 +9,7 @@ This Aggregator tool compares prices for products across different websites usin
   **Request Body**
     *JSON* :
     
-```bash
+
  {
   "country": "string",
   "query": "string"
@@ -21,14 +21,14 @@ This Aggregator tool compares prices for products across different websites usin
 
 ###  Docker
 
-```bash
+
 docker build -t price-aggregator .
 docker run -p 8000:8000 --env-file .env price-aggregator
 
 
 ###  Test using curl
 ## Example:
-```bash
+
 
 curl -X POST https://price-compare-api.onrender.com/compare-prices \
   -H "Content-Type: application/json" \
@@ -39,6 +39,6 @@ curl -X POST https://price-compare-api.onrender.com/compare-prices \
 
 ##  .env Example
 
-```
+
 SERPAPI_KEY="key string"
-```
+
